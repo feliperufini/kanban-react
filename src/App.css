@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+	@apply bg-zinc-950 text-zinc-50;
+	font-family: "Roboto", sans-serif;
+}
+.scrollbar-gray {
+	resize: none;
+}
+.scrollbar-gray::-webkit-scrollbar-track {
+	@apply bg-zinc-600;
+	border-radius: 4px;
+}
+.scrollbar-gray::-webkit-scrollbar {
+	width: 4px;
+	@apply bg-transparent;
+	border-radius: 4px;
+}
+.scrollbar-gray::-webkit-scrollbar-thumb {
+	@apply bg-zinc-400;
+	border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+	@apply bg-zinc-800;
+}
+::-webkit-scrollbar {
+	width: 4px;
+}
+::-webkit-scrollbar:horizontal {
+	height: 8px;
+}
+::-webkit-scrollbar-thumb {
+	@apply bg-zinc-500;
+	border-radius: 4px;
+}
